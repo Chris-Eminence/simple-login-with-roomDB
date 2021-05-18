@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Category"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="20dp"
+        android:layout_margin="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/friends_category_button"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:text="friends"
+        android:backgroundTint="#F4754D"
+        android:onClick="friendsCategory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/family_category_button"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <Button
+        android:id="@+id/family_category_button"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:text="family"
+        android:onClick="familyCategory"
+        android:backgroundTint="#86298714"
+        app:layout_constraintLeft_toRightOf="@id/friends_category_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <Button
+        android:id="@+id/work_category_button"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="workCategory"
+        android:text="work"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mentor_category_button"
+        app:layout_constraintTop_toBottomOf="@id/friends_category_button"/>
+
+    <Button
+        android:id="@+id/mentor_category_button"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:text="mentors"
+        android:onClick="mentorsCategory"
+        android:layout_margin="1dp"
+        app:layout_constraintLeft_toRightOf="@id/work_category_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/family_category_button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
