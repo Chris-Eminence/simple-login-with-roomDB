@@ -9,12 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ContactApp">
-        <activity android:name=".add_contact_dialogue"></activity>
-        <activity android:name=".MentorsCategory" />
-        <activity android:name=".WorkCategory" />
-        <activity android:name=".FamilyCategory" />
-        <activity android:name=".FriendsCategory" />
-        <activity android:name=".MainActivity">
+<!--        <activity android:name=".add_contact_dialogue"></activity>-->
+        <activity android:name=".MentorsCategory"
+            android:label="Mentors"/>
+        <activity android:name=".WorkCategory"
+            android:label="Work "/>
+        <activity android:name=".FamilyCategory"
+            android:label="Family "/>
+        <activity android:name=".FriendsCategory"
+            android:label="Friends"/>
+        <activity android:name=".MainActivity"
+            android:label="Contacts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

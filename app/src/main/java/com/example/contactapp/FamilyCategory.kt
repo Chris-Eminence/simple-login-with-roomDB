@@ -21,6 +21,8 @@ class FamilyCategory : AppCompatActivity() {
         binding = ActivityFamilyCategoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setUpData(binding)
+
+        
     }
 
     private fun setUpData(binding: ActivityFamilyCategoryBinding){
