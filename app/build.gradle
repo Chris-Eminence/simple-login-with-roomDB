@@ -14,6 +14,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -70,4 +71,6 @@ dependencies {
 
         // optional - Test helpers
         testImplementation("androidx.room:room-testing:$room_version")
+
+        implementation 'com.android.support:multidex:1.0.3'
 }
